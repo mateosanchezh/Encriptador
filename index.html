@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Encriptador</title>
 </head>
+
 <body>
-        <header>
-            <img src="IMG/encriptado.png" alt="logo" title="logo">
-            <h1>ENCRIPTADOR DE TEXTO - ALLURA</h1>
-        </header>
-        
-        <main class="principal">
-            <textarea name="text_in_area" id="texto" placeholder="Ingrese el texto aqui" required></textarea>
-            <img id="warning" src="IMG/Warning.png" alt="Warning" title="warning">
-            <p>Solo letras minúsculas y sin acentos</p>
-            <button>Encriptar</button>
-            <button>Desencriptar</button>
+    <header>
+        <img src="IMG/encriptado.png" alt="logo" title="logo" id="logo">
+        <h1>ENCRIPTADOR DE TEXTO - ALLURA</h1>
+    </header>
+
+    <main class="principal">
+        <div class="izquierda">
+                <textarea name="text_in_area" class="texto" placeholder="Ingrese el texto aqui" required></textarea>
+            <div class="avisos">
+                <img id="warning" src="IMG/Warning.png" alt="Warning" title="warning">
+                <p id="text_1">  Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="botones">
+                <button>Encriptar</button>
+                <button>Desencriptar</button>
+            </div>
+
+
+        </div>
+        <div class="mensaje">
             <img src="IMG/Muñeco.png" alt="Muñeco" title="Muñeco">
             <p>Ningun mensaje fue encontrado</p>
             <p>Ingresa el texto que deseas encriptar o Desencriptar</p>
-        </main>
-        
-        <footer>
-            <p> Desarollado por Yesid Sanchez.</p>
-        </footer>
+        </div>
+
+    </main>
+
+    <footer>
+        <p> Desarollado por Yesid Sanchez.</p>
+
+    </footer>
 </body>
+
 </html>
