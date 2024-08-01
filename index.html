@@ -10,21 +10,28 @@
 
 <body>
     <header>
-        <img src="IMG/encriptado.png" alt="logo" title="logo" id="logo">
-        <h1>ENCRIPTADOR DE TEXTO - ALLURA</h1>
+        <img src="IMG/encriptado.png" alt="logo" title="logo" class="logo">
+        <h1>ENCRIPTADOR DE TEXTO - ALURA</h1>
     </header>
 
     <main class="principal">
         <div class="izquierda">
                 <textarea name="text_in_area" class="texto" placeholder="Ingrese el texto aqui" required></textarea>
+            
             <div class="avisos">
-                <img id="warning" src="IMG/Warning.png" alt="Warning" title="warning">
-                <p id="text_1">  Solo letras minúsculas y sin acentos</p>
+                <div class="aviso1">
+                    <img id="warning" src="IMG/Warning.png" alt="Warning" title="warning">
+                    <p id="text_1">  Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="aviso2">
+                    <img id="warning" src="IMG/Warning.png" alt="Warning" title="warning">
+                    <p id="text_1">  No se permiten caracteres especiales</p>
+                </div>
             </div>
 
             <div class="botones">
-                <button>Encriptar</button>
-                <button>Desencriptar</button>
+                <button class="boton1">Encriptar</button>
+                <button class="boton2">Desencriptar</button>
             </div>
 
 
@@ -39,6 +46,10 @@
 
     <footer>
         <p> Desarollado por Yesid Sanchez.</p>
+        <div class="redes">
+            <img src="IMG/github.png" alt="" id="github">
+            <img src="IMG/linkedin.png" alt="" id="linkedin">
+        </div>
 
     </footer>
 </body>
