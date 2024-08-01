@@ -2,26 +2,29 @@
     margin: 0;
     padding: 0;
 }
-body{
+body{   
     height: 100vh;
     background-color: antiquewhite;
 }
 
 header{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 350px;
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px 20px; 
+    background-color: #f8f9fa; 
+    border-bottom: 2px solid #ddd; 
+    
 }
 header img {
-    max-width: 100px;
-    margin: 0%;
+    margin-right: 20px;
+    margin-left: 40px; 
+    height: 50px; 
 }
 
 header h1 {
- 
-    margin: 0;
-    flex: 1;
+    margin: 0; 
+    font-size: 24px; 
 }
 
 .principal{
@@ -48,13 +51,58 @@ header h1 {
     align-items: center;
     gap:10px;
 }
-.avisos{
+.aviso{
+    display: flex;
+    flex-direction: column;
+}
+.aviso1{
     display: flex;
     flex-direction: row ;
-    gap: 5px;
+    padding: 20px 0 0 0;
+    gap: 10px;
 }
+.aviso2{
+    display: flex;
+    flex-direction: row ;
+    padding: 5px 0 20px 0;
+    gap: 10px;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.boton1, .boton2{
+    border: none;
+    padding: 16px 32px ;
+    transition-duration: 0.4s;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px ;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid #008CBA;
+    border-radius: 10px;
+}
+.boton1{
+    background-color: antiquewhite;
+    color: black;
+}
+.boton1:hover {
+    background-color: #008CBA;
+    color: white;
+  }
 
-
+.boton2{
+    background-color: antiquewhite;
+    color: black;
+}
+.boton2:hover{
+    background-color: #008CBA;
+    color: white;
+}
 
 .texto{
     background-color: rgba(255, 255, 255, 0.4);
@@ -69,4 +117,23 @@ header h1 {
     box-shadow: 1px 1px 6px #000000;
     font-size: 1.25rem;
     color: #BF8CE1;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff; 
+    color: black;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+#github, #linkedin{
+    height: 30px;
+    width: 30px;
 }
