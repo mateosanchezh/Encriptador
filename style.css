@@ -1,139 +1,195 @@
-*{
+/* Reseteo de márgenes y rellenos */
+* {
     margin: 0;
     padding: 0;
 }
-body{   
+
+/* Estilos generales del body */
+body {   
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: #758694;
 }
 
-header{
+/* Estilos del header */
+header {
     display: flex;
     align-items: center; 
-    justify-content: center; 
     padding: 10px 20px; 
-    background-color: #f8f9fa; 
-    border-bottom: 2px solid #ddd; 
-    
+    background-color: #405D72; 
+    width: 100%;
 }
+
 header img {
-    margin-right: 20px;
-    margin-left: 40px; 
+    margin-right: 20px; 
+    margin-left: 20px; 
     height: 50px; 
 }
 
 header h1 {
-    margin: 0; 
+    flex: 1; 
+    text-align: center; 
     font-size: 24px; 
+    color: white;
 }
 
-.principal{
+/* Estilos para el contenedor principal y los elementos internos */
+.principal {
     display: flex;
     justify-content: center;
 }
-.izquierda{
+
+.izquierda {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.mensaje{
+.mensaje {
     background-color: rgba(255, 255, 255, 0.4);
-    width: 21.5625rem;
+    width: 25.5%;
     resize: none;
     margin: 20px 80px;
     border-radius: 32px;
-    border:none;
+    border: none;
     outline: none;
-    box-shadow: 1px 1px 6px #000000;;
+    box-shadow: 1px 1px 6px #000000;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:10px;
+    gap: 10px;
+    justify-content: center;
 }
-.aviso{
+
+.aviso {
     display: flex;
     flex-direction: column;
 }
-.aviso1{
+
+.aviso1 {
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
     padding: 20px 0 0 0;
     gap: 10px;
 }
-.aviso2{
+
+.aviso2 {
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
     padding: 5px 0 20px 0;
     gap: 10px;
 }
+
 .botones{
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
 }
-.boton1, .boton2{
+
+.boton1, .boton2 {
     border: none;
-    padding: 16px 32px ;
+    padding: 16px 32px;
     transition-duration: 0.4s;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px ;
+    font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border: 2px solid #008CBA;
+    border: 2px solid black;
     border-radius: 10px;
 }
-.boton1{
-    background-color: antiquewhite;
+
+.boton1 {
+    background-color: #758694;
     color: black;
 }
+
 .boton1:hover {
-    background-color: #008CBA;
+    background-color: #179BAE;
     color: white;
-  }
+}
 
-.boton2{
-    background-color: antiquewhite;
+.boton2 {
+    background-color: #758694;
     color: black;
 }
-.boton2:hover{
-    background-color: #008CBA;
+
+.boton2:hover {
+    background-color: #179BAE;
     color: white;
 }
 
-.texto{
+.texto {
     background-color: rgba(255, 255, 255, 0.4);
     padding: 33px;
     width: 420px;
     height: 340px;
     resize: none;
-    margin: 50px 0  0 50px;
+    margin: 50px 0 0 50px;
     border-radius: 32px;
-    border:none;
+    border: none;
     outline: none;
     box-shadow: 1px 1px 6px #000000;
     font-size: 1.25rem;
-    color: #BF8CE1;
+    color: black;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
-    background-color: #ffff; 
+    background-color: #F7E7DC; 
     color: black;
     text-align: center;
     padding: 10px;
-    bottom: 0;
     margin-top: 40px;
-    position: relative;
     width: 100%;
     align-items: center;
     gap: 10px;
 }
-#github, #linkedin{
+
+#github, #linkedin {
     height: 30px;
     width: 30px;
+}
+
+.salida{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px 0 20px 20px;
+    width: 18rem;
+    height: 27rem;
+    resize: none;
+    border-radius: 32px;
+    border:none;
+    outline: none;
+    font-size: 1.25rem;
+    color: #49043E;
+}
+
+.encriptar{
+    margin: 20px 80px;
+    width: 25.5%;
+    display: flex;
+}
+.encriptar, .afuera {
+    display: flex;
+    flex-direction: column;
+}
+
+.copiar{
+    background-color: #758694;
+    border: 2px solid black;
+    border-radius: 24px;
+    font-size: 1.25rem;
+    width: 300px;
+    height: 40px;
+    color: black;
+    text-align: center;
+    margin: 20px 0  0 12px;
+    cursor: pointer;
+}
+
+.copiar:hover {
+    background-color: #179BAE;
+    color: white;
 }
