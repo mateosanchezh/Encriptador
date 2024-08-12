@@ -17,48 +17,50 @@
 
     <main class="principal">
         <div class="izquierda">
-                <textarea name="text_in_area" class="texto" id="texto" placeholder="Ingrese el texto aqui" required></textarea>
-            
+            <textarea name="text_in_area" class="texto" id="texto" placeholder="Ingrese el texto aqui" required></textarea>
+
             <div class="avisos">
                 <div class="aviso1">
                     <img id="warning" src="IMG/Warning.png" alt="Warning" title="warning">
-                    <p id="text_1">  Solo letras minúsculas y sin acentos</p>
+                    <p id="text_1">Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="aviso2">
                     <img id="warning" src="IMG/Warning.png" alt="Warning" title="warning">
-                    <p id="text_1">  No se permiten caracteres especiales</p>
+                    <p id="text_1">No se permiten caracteres especiales</p>
                 </div>
             </div>
 
             <div class="botones">
                 <button onclick="encriptar();" class="boton1">Encriptar</button>
-                <button class="boton2">Desencriptar</button>
+                <button onclick="desencriptar()" class="boton2">Desencriptar</button>
             </div>
-
-
         </div>
+
         <div class="afuera" id="afuera">
             <div class="encriptar" id="encriptar">
-                <textarea class="salida" name="salida" id=""> </textarea>
-                <button class="copiar">copiar</button>
+                <textarea class="salida" name="salida" id="" readonly></textarea>
+                <button onclick="copy()" class="copiar">Copiar</button>
             </div>
         </div>
-            
-            <div class="mensaje" id="mensaje">
-                <img src="IMG/Muñeco.png" alt="Muñeco" title="Muñeco">
-                <p>Ningun mensaje fue encontrado</p>
-                <p>Ingresa el texto que deseas encriptar o Desencriptar</p>
-            </div>
 
+        <div class="mensaje" id="mensaje">
+            <img src="IMG/Muñeco.png" alt="Muñeco" title="Muñeco">
+            <p>Ningún mensaje fue encontrado</p>
+            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
     </main>
 
     <footer>
-        <p> Desarollado por Yesid Sanchez.</p>
+        <p>Desarrollado por Yesid Sanchez.</p>
         <div class="redes">
-            <img src="IMG/github.png" alt="" id="github">
-            <img src="IMG/linkedin.png" alt="" id="linkedin">
-        </div>
+            <a href="https://github.com/mateosanchezh" target="_blank">
+                <img src="IMG/github.png" alt="GitHub" id="github">
+            </a>
 
+            <a href="https://www.linkedin.com/in/yesidsanchez/" target="_blank">
+                <img src="IMG/linkedin.png" alt="LinkedIn" id="linkedin">
+            </a>
+        </div>
     </footer>
 
     <script src="back.js"></script>
