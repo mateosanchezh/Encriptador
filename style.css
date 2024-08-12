@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+
+html, body {
+    overflow-x: hidden; 
+}
 /* Estilos generales del body */
 body {   
     height: 100vh;
@@ -163,7 +167,8 @@ footer {
     border:none;
     outline: none;
     font-size: 1.25rem;
-    color: #49043E;
+    color: #000000;
+    box-shadow: 1px 1px 6px #000000;
 }
 
 .encriptar{
@@ -192,4 +197,8 @@ footer {
 .copiar:hover {
     background-color: #179BAE;
     color: white;
+}
+/* Elimina el subrayado de los enlaces */
+a {
+    text-decoration: none;
 }
