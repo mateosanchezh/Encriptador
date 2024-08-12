@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="IMG/encriptado.png">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Encriptador</title>
+    
 </head>
 
 <body>
@@ -17,16 +19,17 @@
 
     <main class="principal">
         <div class="izquierda">
-            <textarea name="text_in_area" class="texto" id="texto" placeholder="Ingrese el texto aqui" required></textarea>
+            <textarea name="text_in_area" class="texto" id="texto" placeholder="Ingrese el texto aqui"
+                required></textarea>
 
             <div class="avisos">
                 <div class="aviso1">
                     <img id="warning" src="IMG/Warning.png" alt="Warning" title="warning">
-                    <p id="text_1">Solo letras minúsculas y sin acentos</p>
+                    <p id="text_1"> Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="aviso2">
                     <img id="warning" src="IMG/Warning.png" alt="Warning" title="warning">
-                    <p id="text_1">No se permiten caracteres especiales</p>
+                    <p id="text_1"> No se permiten caracteres especiales</p>
                 </div>
             </div>
 
@@ -34,33 +37,37 @@
                 <button onclick="encriptar();" class="boton1">Encriptar</button>
                 <button onclick="desencriptar()" class="boton2">Desencriptar</button>
             </div>
-        </div>
 
+
+        </div>
         <div class="afuera" id="afuera">
             <div class="encriptar" id="encriptar">
-                <textarea class="salida" name="salida" id="" readonly></textarea>
+                <textarea class="salida" name="salida" id="" readonly> </textarea>
                 <button onclick="copy()" class="copiar">Copiar</button>
             </div>
         </div>
 
         <div class="mensaje" id="mensaje">
             <img src="IMG/Muñeco.png" alt="Muñeco" title="Muñeco">
-            <p>Ningún mensaje fue encontrado</p>
-            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            <p>Ningun mensaje fue encontrado</p>
+            <p>Ingresa el texto que deseas encriptar o Desencriptar</p>
         </div>
+
     </main>
 
     <footer>
-        <p>Desarrollado por Yesid Sanchez.</p>
+        <p> Desarollado por Yesid Sanchez.</p>
         <div class="redes">
             <a href="https://github.com/mateosanchezh" target="_blank">
-                <img src="IMG/github.png" alt="GitHub" id="github">
+                <img src="IMG/github.png" alt="LinkedIn" id="linkedin">
             </a>
 
             <a href="https://www.linkedin.com/in/yesidsanchez/" target="_blank">
-                <img src="IMG/linkedin.png" alt="LinkedIn" id="linkedin">
+                <img src="IMG/linkedin.png" alt="" id="linkedin">
             </a>
+
         </div>
+
     </footer>
 
     <script src="back.js"></script>
