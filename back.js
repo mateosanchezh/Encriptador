@@ -31,6 +31,7 @@ function encriptar() {
         };
         let encriptar = texto.replace(/[aeiou]/g, m => chars[m]);
         asignarTextoElemento('.salida', encriptar);
+        limpiarCaja('.texto')
     }
 }
 
@@ -59,6 +60,7 @@ function desencriptar() {
         const reverseRegEx = new RegExp(Object.keys(reverse).join('|'), 'g');
         let desencriptar = texto.replace(reverseRegEx, m => reverse[m]);
         asignarTextoElemento('.salida', desencriptar);
+        limpiarCaja('.texto')
     }
 }
 
