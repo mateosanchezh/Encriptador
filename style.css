@@ -1,7 +1,27 @@
+/*Imports de las Fonts usadas*/
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Matemasie&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cutive+Mono&family=Matemasie&family=Permanent+Marker&display=swap');
+
+
 /* Reseteo de márgenes y rellenos */
 * {
     margin: 0;
     padding: 0;
+}
+
+/* Declaracion de variables */
+
+:root{
+    --primary-color: #000000;
+    --secundary-color:#ffff;
+    --backgraund-secundary-color:#ffffff66;
+    --backgraund-color: #758694; 
+    --color-header: #405D72;
+    --color-hoover:#179BAE;
+    --color-footer:#F7E7DC;
+    --font-principal:"Permanent Marker", cursive;
+    --font-secundary:"Cutive Mono", monospace;
 }
 
 html, body {
@@ -11,7 +31,7 @@ html, body {
 /* Estilos generales del body */
 body {   
     height: 100vh;
-    background-color: #758694;
+    background-color: var(--backgraund-color);
 }
 
 /* Estilos del header */
@@ -19,7 +39,7 @@ header {
     display: flex;
     align-items: center; 
     padding: 10px 20px; 
-    background-color: #405D72; 
+    background-color: var(--color-header);
     width: 100%;
 }
 
@@ -30,10 +50,11 @@ header img {
 }
 
 header h1 {
+    font-family: var(--font-principal);
     flex: 1; 
     text-align: center; 
     font-size: 24px; 
-    color: white;
+    color: var(--secundary-color);
 }
 
 /* Estilos para el contenedor principal y los elementos internos */
@@ -51,14 +72,14 @@ header h1 {
 }
 
 .mensaje {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: var(--backgraund-secundary-color);
     width: 400px;
     resize: none;
     margin: 20px 80px;
     border-radius: 32px;
     border: none;
     outline: none;
-    box-shadow: 1px 1px 6px #000000;
+    box-shadow: 1px 1px 6px var(--primary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,8 +92,14 @@ header h1 {
     height: auto;
 }
 .mensaje p {
+    text-align: center;
     max-width: 100%; 
     height: auto;
+    font-family: var(--font-secundary);
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
 }
 
 
@@ -105,32 +132,32 @@ header h1 {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid var(--primary-color);
     border-radius: 10px;
 }
 
 .boton1 {
-    background-color: #758694;
+    background-color: var(--backgraund-color);
     color: black;
 }
 
 .boton1:hover {
-    background-color: #179BAE;
+    background-color: var(--color-hoover);
     color: white;
 }
 
 .boton2 {
-    background-color: #758694;
+    background-color: var(--backgraund-color);
     color: black;
 }
 
 .boton2:hover {
-    background-color: #179BAE;
-    color: white;
+    background-color: var(--color-hoover);
+    color: var();
 }
 
 .texto {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: var(--backgraund-secundary-color);
     padding: 33px;
     width: 420px;
     height: 340px;
@@ -139,7 +166,7 @@ header h1 {
     border-radius: 32px;
     border: none;
     outline: none;
-    box-shadow: 1px 1px 6px #000000;
+    box-shadow: 1px 1px 6px var(--primary-color);
     font-size: 1.25rem;
     color: black;
 }
@@ -147,7 +174,7 @@ header h1 {
 footer {
     display: flex;
     flex-direction: column;
-    background-color: #F7E7DC; 
+    background-color: var(--color-footer); 
     color: black;
     text-align: center;
     padding: 10px;
@@ -163,7 +190,7 @@ footer {
 }
 
 .salida {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: var(--backgraund-secundary-color);
     padding: 20px;
     width: 300px;
     height: 27rem;
@@ -172,8 +199,8 @@ footer {
     border: none;
     outline: none;
     font-size: 1.25rem;
-    color: #000000;
-    box-shadow: 1px 1px 6px #000000;
+    color: var(--primary-color);
+    box-shadow: 1px 1px 6px var(--primary-color);
     margin: 0 auto; /* Centrar horizontalmente */
 }
 
